@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Strona główna</title>
+		<meta name="description" content="Opis strony internetowej"/>
+		<meta name="keywords" content="Słowa kluczowe">
+        <link rel="icon" href="imgs/favicon.png" type="image/x-icon">
+        <meta name="author" content="Łukasz Zagroba">
+        <meta name="creator" content="Łukasz Zagroba">
+        <meta name="publisher" content="Łukasz Zagroba">
+        <meta name="robots" content="all">
+        <meta name="viewport" content="width=device-width, height=device-height intial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="trzypaski">
+                    <div id="gornypas"></div>
+                    <div id="srodkowypas"></div>
+                    <div id="dolnypas"></div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="content">
+
+            </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+
+            $(document).ready(function() {
+            var NavY = $('.nav').offset().top;
+             
+            var stickyNav = function(){
+            var ScrollY = $(window).scrollTop();
+                  
+            if (ScrollY > NavY) { 
+                $('.nav').addClass('sticky');
+            } else {
+                $('.nav').removeClass('sticky'); 
+            }
+            };
+             
+            stickyNav();
+             
+            $(window).scroll(function() {
+                stickyNav();
+            });
+            });
+            
+        </script>
+        
+    </body>
+</html>
