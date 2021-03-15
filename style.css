@@ -107,6 +107,23 @@ footer p#copyrights
     cursor: pointer;
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 @media only screen and (max-width: 600px) 
   {
     #content
