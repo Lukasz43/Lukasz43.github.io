@@ -85,18 +85,14 @@ footer p#copyrights
     cursor: pointer;
 }
 
-#instagram:hover
-{
-    cursor: pointer;
-}
-
 .navbar 
     {
     overflow: hidden;
-    background-color: red;
+    background-color: rgb(245, 59, 59);
     position: fixed;
     top: 0;
     width: 100%;
+    height: 80px;
     }
 
     .navbar a 
@@ -110,65 +106,67 @@ footer p#copyrights
     font-size: 17px;
     }
 
-.rozwiniete
-{
-    width: 25%;
-    height: 100%;
-    background-color: red;
-    position: fixed;
-    display: block;
-    
-}
-
-.rozwiniete > ol
-{
-    list-style-type: none;
-}
-
-.rozwiniete > ol > li
-{
-    background-color: red;
-    border-bottom: rgb(156, 23, 23) 3px solid;
-    padding: 20px;
-    width: 100%;
-    margin-left: -40px;
-    padding-left: 50px;
-    margin-left: -70px; 
-    color: white;
-}
-.rozwiniete > ol > li  > a
-{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    width: 200px;
-    height: ;
-}
-
-#menunazwa
-{
-    font-size: 50px;
-    margin-top: 75px;
-    text-align: center;
-    color: white;
-    border: white 2px solid;
-}
-
-.rozwiniete > ol > li:hover
-{
-    cursor: pointer;
-    background-color: rgb(190, 2, 2);
-}
-
 #trzypaski:hover
 {
     cursor: pointer;
 }
-#trzypaski:hover > .rozwiniete 
+
+#rozwiniete
+{
+    width: 400px;
+    height: 100%;
+    background-color: rgb(245, 59, 59);
+    position: fixed;
+    margin-top: -75px;
+    display: none;
+    
+}
+
+#rozwiniete > ol
+{
+    list-style-type: none;
+    padding-top: 160px;
+    margin-left: -40px;
+}
+
+#rozwiniete > ol > li
+{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+    border-top: rgb(190, 2, 2) 2px solid;
+}
+
+#rozwiniete > ol > li:hover
+
+{
+    background-color: rgb(175, 53, 53);
+}
+
+#rozwiniete:hover
 {
     display: block;
-    z-index: 1000;
 }
+
+#trzypaski:hover + #rozwiniete
+{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 600px) 
@@ -191,16 +189,6 @@ footer p#copyrights
     {
         width: 100px;
         height: 100px;
-    }
-
-    .rozwiniete
-    {
-        width: 100%;
-        height: 100%;
-        background-color: red;
-        position: fixed;
-        display: block;
-        
     }
 
   }
