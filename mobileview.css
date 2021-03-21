@@ -41,4 +41,19 @@
         display: none;
     }
 
+    .paragrafwcontent
+    {
+        text-align: justify; 
+        font-size: 22px;
+    }
+
+    .textcontent
+    {
+        text-align: justify; 
+        font-size: 22px; 
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+
+
   }
